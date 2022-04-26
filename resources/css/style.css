@@ -1,0 +1,149 @@
+* {
+  font-family: Poppins, sans-serif;
+  color: #fff;
+}
+
+body,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #272f3e;
+  height: 60px;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+}
+a:hover {
+  font-size: 115%;
+}
+
+.center {
+  text-align: center;
+}
+.gradient {
+  background: #a84dcf;
+  background: linear-gradient(to right, #a84dcf 6%, #cf4b4b 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3.5rem;
+}
+
+#logo-container svg {
+  width: 100px;
+  height: auto;
+}
+
+#about {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-image: url("../images/background-k8.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.about-text {
+  align-self: center;
+  width: 80%;
+
+  font-size: 1.4rem;
+  font-family: "Inter", sans-serif;
+}
+
+.about-text h1 {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+#content-section {
+  background-color: #000000;
+  padding: 1rem;
+}
+
+#content-section h1 {
+  padding: 2rem;
+}
+
+.card-container {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  margin: 0.5rem;
+  border-radius: 20px;
+  border: 1px solid rgb(151, 255, 231);
+}
+
+.card:hover {
+  box-shadow: 1px 2px 20px rgba(252, 255, 58, 0.647);
+  margin-top: -0.5rem;
+}
+
+.card img {
+  max-width: 100%;
+}
+.card p {
+  padding: 0 1rem;
+}
+
+footer {
+  padding: 1rem;
+  background-color: #272f3e;
+  display: flex;
+  justify-content: space-around;
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+footer div a {
+  padding: 0.3rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #logo-container svg {
+    width: 50px;
+    height: auto;
+  }
+  footer {
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .card-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .hiden {
+    display: none;
+  }
+  footer {
+    display: flex;
+    flex-direction: column;
+  }
+}
